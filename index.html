@@ -1,299 +1,530 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<title>Target Data</title>
-  <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:ital,wght@0,100;1,100&family=Send+Flowers&family=Vollkorn&display=swap" rel="stylesheet">
-  <style type="text/css">
-    h3,p{
-      font-family: 'Send Flowers', cursive;
-      color: #FFFFFF;
-    }
-    *{
-      font-family: 'Cabin', sans-serif;
+    <meta charset="utf-8">
+    <title>Target-Data</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-      color: #6A6A6A;
-    }
-  </style>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body style="background-color:#B2DCE1">
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
-<!-- /menu-->
-<div class="container">
-  <div class="row">
-    <div class="col">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Target Data</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://www.sena.edu.co/es-co/Paginas/default.aspx">SENA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Martin-code11">Github</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Martin Solano
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="https://centronalcolomboaleman.blogspot.com/">Colombo Aleman</a></li>
-            <li><a class="dropdown-item" href="https://co.linkedin.com/in/martin-enrique-solano-vargas-42bb78166">About Me</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">(つ▀¯▀ )つ</a></li>
-          </ul>
-        </li>
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">Target-Data</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About us</a>
+                        <a href="#overview" class="nav-item nav-link">News</a>
+                        <a href="#features" class="nav-item nav-link">Blogs</a>
+                        <a href="#pricing" class="nav-item nav-link">Plans</a>
+                        <a href="#testimonial" class="nav-item nav-link">Other Company</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Amazing</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">What is Big-Data?</h1>
+                            <p class="text-white pb-3 animated slideInDown">Big data refers to data that is so large, fast or complex that it's difficult or impossible to process using traditional methods. The act of accessing and storing large amounts of information for analytics has been around for a long time.</p>
+                            <div class="position-relative w-100 mt-3">
+                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 58px;">
+                                <button type="button" class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">Amazing</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid rounded animated zoomIn" src="img/hero.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Feature Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded text-center p-5">
+                            <i class="fa fa-4x fa-edit text-primary mb-4"></i>
+                            <h5 class="mb-3">Deep-Learning.</h5>
+                            <p class="m-0">Deep learning attempts to mimic the human brain—albeit far from matching its ability—enabling systems to cluster data and make predictions with incredible accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded text-center p-5">
+                            <i class="fa fa-4x fa-sync text-primary mb-4"></i>
+                            <h5 class="mb-3">Open-Data</h5>
+                            <p class="m-0">Open data is data that anyone can access, use and share. Governments, businesses and individuals can use open data to bring about social, economic and environmental benefits.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded text-center p-5">
+                            <i class="fa fa-4x fa-draw-polygon text-primary mb-4"></i>
+                            <h5 class="mb-3">Graphics.</h5>
+                            <p class="m-0">The presence of good graphics helps make that decision simpler for your customers. The art of graphic design thus plays a crucial role for a business. Using effective graphic designs to advertise for your product creates a unique identity for it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-6" id="about">
+            <div class="container">
+                <div class="row g-5 flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">We are a company of business intelligence</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h5>The best information</h5>
+                                <p class="mb-0">You can have the best information about your market.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h5>24/7 Hours Support</h5>
+                                <p class="mb-0">You can share information with your team. </p>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Overview Start -->
+        <div class="container-xxl bg-light my-6 py-5" id="overview">
+            <div class="container">
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/overview-1.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">01</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0"> <a href="https://www.rtinsights.com/how-wide-data-not-big-data-provides-more-prescriptive-recommendations/" class="stretched-link"> How Wide Data, Not Big Data, Provides More Prescriptive Recommendations</a></h5>
+                        </div>
+                        <p class="mb-4">For companies to effectively use their data for AI for predictive purposes, a variety of data, and especially wide data, must be used.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>1. Start with a data census</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>2. Know your data assets</p>
+                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>3. Use machine learning and natural language processing and machine learning to convert and make sense of unstructured content
+</p>
+                    </div>
+                </div>
+                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">02</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0"><a href="https://www.prnewswire.com/news-releases/the-china-international-big-data-industry-expo-2022-will-open-online-on-may-26-301543255.html" class="stretched-link">The China International Big Data Industry Expo 2022 will open online on May 26</a></h5>
+                        </div>
+                        <p class="mb-4">GUIYANG, China, May 9, 2022 /PRNewswire/ -- The China International Big Data Industry Expo 2022 will be held online on May 26, the event organizer said at the press conference of the China International Big Data Industry Expo 2022 on May 7.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>grabbing digital opportunities to enjoy digital value</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Data Valley Forum</p>
+                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Data Expo Release</p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/overview-2.jpg">
+                    </div>
+                </div>
+                <div class="row g-5 py-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/overview-3.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="mb-0">03</h1>
+                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
+                            <h5 class="mb-0"><a href="https://www.africa.com/big-data-applications-during-the-covid-19-pandemic/" class="stretched-link">Big Data Applications During The Covid-19 Pandemic</a></h5>
+                        </div>
+                        <p class="mb-4">Big data is the currency that now runs the world. But the applications of this incredible tool go far beyond business.</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Applications for big data in combating COVID-19</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>Uncovering new treatments</p>
+                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Improving outreach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Overview End -->
+
+
+        <!-- Advanced Feature Start -->
+        <div class="container-xxl py-6" id="features">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Analysis and tools</h1>
+                    <p class="mb-5">...</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-edit fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Google Analytics</h5>
+                            <p class="m-0">Google Analytics gives you the free tools you need to analyze your business data from one place and make more informed decisions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-sync fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Power B.I.</h5>
+                            <p class="m-0">Create a data-driven culture with business intelligence for everyone</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-laptop fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Excel</h5>
+                            <p class="m-0">Excel is a very powerful tool for extracting meaningful information from large amounts of data. It also works great for simple calculations and for keeping track of almost any type of information. The key to unlocking all this potential is the cell grid.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="advanced-feature-item text-center rounded py-5 px-4">
+                            <i class="fa fa-draw-polygon fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Pandas</h5>
+                            <p class="m-0">pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+                            built on top of the Python programming language.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Advanced Feature End -->
+
+
+        <!-- Facts Start -->
+        <!-- <div class="container-xxl bg-primary my-6 py-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                        <i class="fa fa-cogs fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">7264</h1>
+                        <p class="text-white mb-0">Active Install</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                        <i class="fa fa-users fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">6521</h1>
+                        <p class="text-white mb-0">Satisfied Clients</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">729</h1>
+                        <p class="text-white mb-0">Award Wins</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-quote-left fa-3x text-white mb-3"></i>
+                        <h1 class="mb-2" data-toggle="counter-up">5917</h1>
+                        <p class="text-white mb-0">Clients Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Facts End -->
+
+
+        <!-- Process Start -->
+         <!-- <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" src="img/process.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Three Simple Steps To Start Working With</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <ul class="process mb-0">
+                            <li>
+                                <span><i class="fa fa-cog"></i></span>
+                                <div>
+                                    <h5>Install the Software</h5>
+                                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-address-card"></i></span>
+                                <div>
+                                    <h5>Setup Your Profile</h5>
+                                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-check"></i></span>
+                                <div>
+                                    <h5>Enjoy The Features</h5>
+                                    <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Process End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-6" id="pricing">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Pricing Plan</h1>
+                    <p class="mb-5">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="price-item rounded overflow-hidden">
+                            <div class="bg-dark p-4">
+                                <h4 class="text-white mt-2">You can share information</h4>
+                                <div class="text-white">
+                                    <span class="align-top fs-4 fw-bold">$</span>
+                                    <h1 class="d-inline display-6 text-primary mb-0"> 29.99</h1>
+                                    <span class="align-baseline">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-times text-danger pt-1"></i></div>
+                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-item rounded overflow-hidden">
+                            <div class="bg-primary p-4">
+                                <h4 class="text-white mt-2">Have real-time access</h4>
+                                <div class="text-white">
+                                    <span class="align-top fs-4 fw-bold">$</span>
+                                    <h1 class="d-inline display-6 text-dark mb-0"> 49.99</h1>
+                                    <span class="align-baseline">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-times text-danger pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-times text-danger pt-1"></i></div>
+                                <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item rounded overflow-hidden">
+                            <div class="bg-dark p-4">
+                                <h4 class="text-white mt-2">Personalized attention</h4>
+                                <div class="text-white">
+                                    <span class="align-top fs-4 fw-bold">$</span>
+                                    <h1 class="d-inline display-6 text-primary mb-0"> 79.99</h1>
+                                    <span class="align-baseline">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Cross-browser Support</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Remove Author's Credit</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-check text-success pt-1"></i></div>
+                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-6" id="testimonial">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">With great data comes great results!!!</h1>
+                    <p class="mb-5">Process data, is very common today and your company can do too.</p>
+                </div>
+                <!--<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <span>Profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <span>Profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <span>Profession</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-6" id="contact">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-3">Get In Touch</h1>
+                        <p class="mb-4">If you are interesting in work with Big-Data or Data science, get in touch with us.</p>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2">Call Us</p>
+                                <h5 class="mb-0">+57 3144889841</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2">Mail Us</p>
+                                <h5 class="mb-0">mesolano58@misena.edu.co</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-0">
+                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-2">Our Office</p>
+                                <h5 class="mb-0">Cra. 54 #68 – 80, Barranquilla, Atlántico</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
         
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Search
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">(｢•-•)｢ ʷʱʸ?</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Sorry, we are working on this part.   
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>   
-      </div>
-      
-    </div>
-  </div>
-</div>
-      </form>
-    </div>
-  </div>
-</nav>
-</div>
-</div>
-</div>
-
-<!-- /menu-->
-
-
-<!-- /banner1 -->
-<div class="container">
-  <div class="row">
-    <div class="col">
-<div class="shadow-lg p-3 mb-5 bg-body rounded">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="img/data3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h3 class="fw-bold">With great data comes great results!!!</h3>
-        <p >Grow up</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="img/data1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h3 class="fw-bold">With great data comes great results!!!</h3>
-        <p>Work Hard</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/data2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h3 class="fw-bold">With great data comes great results!!!</h3>
-        <p>Together We Can Will Win</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /banner1 -->
-
-<!-- /article-->
-<div class="container">
-  <div class="row">
-    <div class="col">
-<div class="shadow-lg p-3 mb-5 bg-body rounded">
-<div class="row g-0 bg-light position-relative">
-  <div class="col-md-6 mb-md-0 p-md-4">
-    <img src="img/news.png" class="w-100" alt="...">
-  </div>
-  <div class="col-md-6 p-4 ps-md-0">
-    <h5 class="mt-0">Big Data Pharmaceutical Advertising Market Research Report, Growth Trends and Competitive Analysis 2022-2029 | International Business Machines Corporation, Oracle, Tata Consultancy Services Limited</h5>
-    <p1>A2Z Market Research published new research on Global Big Data Pharmaceutical Advertising covering the micro level of analysis by competitors and key business segments (2022-2029).</p1>
-    <p>
-      <a href="https://chatttennsports.com/712181/news/big-data-pharmaceutical-advertising-market-research-report-growth-trends-and-competitive-analysis-2022-2029-international-business-machines-corporation-oracle-tata-consultancy-services-limited/" class="stretched-link">News</a>
-    </p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- /article end-->
-
-<!-- /myself-->
-<div class="container">
-  <div class="row">
-    <div class="col">
-
-<div class="shadow-lg p-3 mb-5 bg-body rounded">
-<div class="mb-3">
-<div class="container">
-  <div class="row">
-    <div class="col">
-    	<center>ヽ(•‿•)ノ</center>
-    </div>
-    <div class="col">
-    	
-<!-- Modal -->
-      <center>
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel">presentation 1/4</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="img/p1.jpg" class="img-fluid" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Next</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel2">presentation 2/4</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="img/p2.jpg" class="img-fluid" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Next Page</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel3">presentation 3/4</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="img/p3.jpg" class="img-fluid" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Next Page</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel4">presentation 4/4</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="img/p4.jpg" class="img-fluid" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-      </div>
-    </div>
-  </div>
-</div>
-<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Information</a>
-        
- </center>
-<!-- Modal end-->
-    </div>
-    <div class="col">
-      <center>ヽ(•‿•)ノ</center>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- /myself end-->
-
-<!-- /gmail-->
-<div class="container">
-  <div class="row">
-    <div class="col">
-<div class="shadow-lg p-3 mb-5 bg-body rounded">
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-placement="left" title="Next time">
-  send
-</button>
-</div>
-</div>
-  </div>
-</div>
-
-  <!-- /gmail end-->
-
-
-
-  <!-- /footer-->
-  <div class="container">
+        <!-- Footer Start -->
+       <div class="container">
   <div class="row">
     <div class="col">
   <div class="shadow-lg p-3 mb-5 bg-body rounded">
@@ -318,7 +549,24 @@
 </div>
 </div>
 </div>
-<!-- /footer end-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
